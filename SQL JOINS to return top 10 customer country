@@ -1,0 +1,11 @@
+Here is the SQL synthax
+SELECT
+ D.COUNTRY,
+ count(customer_id)
+ from Customer A
+ INNER JOIN address B ON A.address_id = B.address_id
+ INNER JOIN city C ON B. city_id = C.city_id
+ INNER JOIN Country D ON C.country_id = D.country_id
+ GROUP BY COUNTRY
+ ORDER BY count(customer_id)DESC
+ Limit 10;
