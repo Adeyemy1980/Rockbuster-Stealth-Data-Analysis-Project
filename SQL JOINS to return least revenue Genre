@@ -1,0 +1,12 @@
+Here is the SQL synthax
+SELECT
+A.film_id,
+A.title,
+sum(D.amount) AS "Revenue gain"
+FROM film A   
+INNER  JOIN inventory B ON A.film_id = B.film_id
+Inner join rental C ON B.inventory_id = C.inventory_id
+INNER JOIN payment D ON C.rental_id = D.rental_id
+GROUP BY title,A.film_id
+order by  sum(D.amount)ASC
+LIMIT 10;
