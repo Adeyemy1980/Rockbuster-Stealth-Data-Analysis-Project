@@ -8,18 +8,18 @@ To help Rockbuster understands how to deal with the stiff competition from strea
 # Data set
 The dataset comprises a database with the following tables:
 
-payment
-rental
-store
-film_actor
-inventory
-film_category
-customer
-staff
-actor
-film
-category
-language
-address
-city
+payment,
+rental,
+store,
+film_actor,
+inventory,
+film_category,
+customer,
+staff,
+actor,
+film,
+category,
+language,
+address,
+city,
 country
