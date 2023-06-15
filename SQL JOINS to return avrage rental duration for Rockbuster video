@@ -1,0 +1,10 @@
+Here is the SQL synthax
+SELECT 
+AVG(A.rental_duration) AS "average_rental_duration",
+C.name AS Videos
+FROM film A
+INNER  JOIN film_category B ON A.film_id = B.film_id
+INNER JOIN category C ON B.category_id = C.category_id
+GROUP BY Videos
+ORDER BY "average_rental_duration" DESC
+LIMIT 10;
